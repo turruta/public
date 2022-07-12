@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html class="notranslate" translate="no">
+<head>
+	<title>turruta</title>
+	<meta charset="utf-8">
+	<meta name="theme-color" content="#ffffff"-->
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=1">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="google" content="notranslate" />
+	<meta name="googlebot" content="notranslate" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAEZJREFUOE9jZGBg+M9AAWCkjQFrGRgYghgYGNYxMDAE43cedhcgewqkAg8YCgagOx8tXAh7AZv/kcKFdANIdsEwiIXh7wUAXTkhAXT5WicAAAAASUVORK5CYII=" rel="icon" type="image/x-icon">
+</head>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+<style type="text/css">
+
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		}
+		::selection{
+					background: hsl(222, 4%, 33%);
+					color: hsl( 0, 0%, 100% )
+					}
+		::-moz-selection{
+					background: hsl(222, 4%, 33%);
+					color: hsl( 0, 0%, 100% )
+					}
+
+		::-webkit-scrollbar{
+							width: 10px;
+							background: transparent
+							}
+
+		::-webkit-scrollbar-track{ background: transparent }
+		::-webkit-scrollbar-thumb{
+								background: transparent;
+								border-top: 0 !important;
+								border-bottom: 0 !important;
+								border-left: 10px solid #c7bddb
+								}
+
+
+	body{
+		background: hsl(260deg 10% 30%);
+		min-width: 320px;
+		}
+
+
+	#bar{
+		height: 72px;
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+		background: hsl(0deg 0% 0%);
+		font-size: 43px;
+		padding: 6px 24px;
+		box-sizing: border-box;
+		color: hsl(120deg 100% 50%);
+		letter-spacing: .05em;
+		font-weight: bold;
+		font-family: 'Dosis', sans-serif;
+		overflow: hidden;
+		}
+		#bar:before{
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: -1;
+					width: 100%;
+					height: 72px;
+					background: #000;
+					}
+
+		#buttom_login{
+					position: relative;
+					float: right;
+					top: 18px;
+					padding: 6px 12px;
+					background: hsl(120deg 100% 50%);
+					font-size: 16px;
+					color: #000;
+					letter-spacing: 1px;
+					border-radius: 9px;
+					font-weight: 400;
+					}
+
+
+	#items{
+			position: relative;
+			padding: 48px 24px;
+			box-sizing: border-box;
+			width: 100%;
+			margin: 0 auto;
+			display: grid;
+			grid-template-columns: repeat( auto-fit, 300px );
+			justify-content: center;
+			gap: 24px;
+			max-width: 1000px;
+			}
+
+		.item{
+			position: relative;
+			width: 300px;
+			height: 400px;
+			background: hsl(260deg 30% 80%);
+			overflow: auto;
+			/*box-shadow: 0px 2px 6px 1px rgb(0 0 0 / 50%);*/
+			border-radius: 18px;
+			}
+
+			.item.item_like:after{
+							content: '';
+							position: absolute;
+							top: 9px;
+							left: 9px;
+							width: 36px;
+							height: 36px;
+							border-radius: 50%;
+							color: lime !important;
+							text-align: center;
+							font-size: 24px;
+							line-height: 42px;
+							text-align: center;
+							background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDIwMDEwOTA0Ly9FTiIKICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4wIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiB3aWR0aD0iMTI4MC4wMDAwMDBwdCIgaGVpZ2h0PSIxMjI4LjAwMDAwMHB0IiB2aWV3Qm94PSIwIDAgMTI4MC4wMDAwMDAgMTIyOC4wMDAwMDAiCiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0Ij4KPG1ldGFkYXRhPgpDcmVhdGVkIGJ5IHBvdHJhY2UgMS4xNSwgd3JpdHRlbiBieSBQZXRlciBTZWxpbmdlciAyMDAxLTIwMTcKPC9tZXRhZGF0YT4KPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsMTIyOC4wMDAwMDApIHNjYWxlKDAuMTAwMDAwLC0wLjEwMDAwMCkiCmZpbGw9IiMwMGZmMDAiIHN0cm9rZT0ibm9uZSI+CjxwYXRoIGQ9Ik0zNTgwIDEwNTE5IGMtNDE4IC00NyAtODU1IC0yMzMgLTExOTcgLTUxMCAtMTkxIC0xNTUgLTQxNSAtNDExCi01NTIgLTYzMSAtMzAzIC00ODUgLTQ2OCAtMTAzNyAtNTEyIC0xNzEzIC03NiAtMTE3MSAzNzUgLTIwMDAgMTUyNCAtMjgwMgoyMTIgLTE0OCA0MDggLTI3MyA4MjIgLTUyMyA1NzAgLTM0NCA3OTAgLTQ5MCAxMDgyIC03MTcgNjU5IC01MTEgMTI5NiAtMTIxMwoxNTM3IC0xNjkzIDI5IC01OCA1OCAtMTIxIDY1IC0xNDAgbDEzIC0zNSAxOCA1MCBjMTM5IDM5NyA4MDkgMTE2NyAxNTYwIDE3OTUKMzI5IDI3NSA2MTcgNDc2IDEyNDAgODY1IDc0MyA0NjQgMTA0NCA2ODMgMTM2NCA5OTUgNDg0IDQ3MSA3MzcgOTQ3IDgzMyAxNTY3CjI0IDE1NSAyNCA2NjEgMCA4NjMgLTU5IDQ5MCAtMTY2IDg2NCAtMzU3IDEyNDAgLTEzNSAyNjUgLTMwMSA0OTEgLTUxMSA2OTUKLTM2OSAzNTggLTc5MiA1NjcgLTEzMDkgNjQ3IC0xMzMgMjAgLTUyOCAxNyAtNjY1IC01IC03ODcgLTEzMSAtMTQzNSAtNTgzCi0xOTExIC0xMzMyIC02NCAtMTAwIC0xNzkgLTMxMyAtMjI5IC00MjYgbC0zOSAtODYgLTEwMSAyMDEgYy01NSAxMTEgLTEzNwoyNjAgLTE4MiAzMzIgLTQ5NyA3OTMgLTEyMDUgMTI3NSAtMjAwOCAxMzY0IC0xMDUgMTIgLTM3OCAxMSAtNDg1IC0xeiIvPgo8L2c+Cjwvc3ZnPgo=") #000;
+							background-size: 34px;
+							background-repeat: no-repeat;
+							background-position: center 4px;
+							}
+			.item_img{
+					width: 100%;
+					height: 300px;
+					background-repeat: no-repeat !important;
+					background-size: cover !important;
+					background-position: center !important;
+					background-color: #fff;
+					background-image: url( data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIzMDBweCIgaGVpZ2h0PSIzMDBweCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMwMCAzMDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0NDQ0NDQyIgZD0iTTI0MSwxNjUuODRjMCwxNi40OC0xMy4zOCwyOS44NC0yOS44NywyOS44NFYxOTZIMTE5djEwNEg1OVY5OS44NkM1OSw4My4zNyw3Mi4zNiw3MCw4OC44NCw3MA0KCXMyOS44NCwxMy4zNywyOS44NCwyOS44NkgxMTlWMTM2aDkyLjEzQzIyNy42MiwxMzYsMjQxLDE0OS4zNiwyNDEsMTY1Ljg0eiIvPg0KPHBhdGggZmlsbD0iI0NDQ0NDQyIgZD0iTS00OS45MzUsMTQwLjc1MiIvPg0KPC9zdmc+DQo= )
+					}
+			.item_info{
+						font-size: 14px;
+						box-sizing: border-box;
+						padding: 18px 12px 12px 12px;
+						}
+						.item_info span{
+										font-size: 13px;
+										display: block;
+										margin-top: 6px;
+										}
+			.item_info span b{ background: #fff; padding: 2px; border-radius: 50%; }
+			.item_info span b:empty{ background: transparent !important; }
+
+
+	#footer{
+			position: relative;
+			font-size: 12px;
+			width: 100%;
+			max-width: 1000px;
+			margin: 0 auto;
+			padding: 24px;
+			box-sizing: border-box;
+			color: #fff;
+			}
+			#footer .color_lime{
+								color: lime !important;
+								font-size: 24px;
+								font-weight: 400;
+								padding: 0 6px;
+								}
+
+			.color_lime{ color: lime !important }
+			.color_black{ color: black !important }
+
+	@media( max-width: 320px ){
+								#items{
+										padding-top: 12px;
+										gap: 12px;
+										}
+								.item{
+										width: 100%;
+										border-radius: 6px
+										}
+							}
+
+</style>
+<body>
+
+
+<div id="bar">
+			turruta
+			<span id="buttom_login">login</span>
+			</div>
+
+
+
+
+<div id="items">
+				<div class="item item_like">
+								<div class="item_img" style="background: url(https://pbs.twimg.com/media/D4e4QYnXkAEs4fO?format=jpg&name=small);"></div>
+								<div class="item_info">
+														<b>Garzón</b>
+														<span>Capital Diocesana del Huila</span>
+														<span><b>6</b> Destinos en ésta ruta.</span>
+														</div>
+								</div>
+
+
+
+
+
+<!--
+	                                      88  88     ad88  88                                      
+                                          88  ""    d8"    ""                                      
+                                          88        88                                             
+88,dPYba,,adPYba,    ,adPPYba,    ,adPPYb,88  88  MM88MMM  88   ,adPPYba,  ,adPPYYba,  8b,dPPYba,  
+88P'   "88"    "8a  a8"     "8a  a8"    `Y88  88    88     88  a8"     ""  ""     `Y8  88P'   "Y8  
+88      88      88  8b       d8  8b       88  88    88     88  8b          ,adPPPPP88  88          
+88      88      88  "8a,   ,a8"  "8a,   ,d88  88    88     88  "8a,   ,aa  88,    ,88  88          
+88      88      88   `"YbbdP"'    `"8bbdP"Y8  88    88     88   `"Ybbd8"'  `"8bbdP"Y8  88  
+
+
+	@_explain: 
+				1. si quiere colocarle corazon al item, solo debe agregarle 'item_like' en la clase.
+				2. para agregar la imagen convierte 
+					<div class="item_img"></div> 
+					en ésto => 
+					<div class="item_img" style="background: url()"></div>
+					y en medio de los parentesis, le coloca la url de la imagen
+					puede guiarse con la forma del primer item
+
+
+
+-->
+
+
+
+				<div class="item">
+								<div class="item_img"></div>
+								<div class="item_info">
+														<b><!-- title --></b>
+														<span><!-- descripcion --></span>
+														<span><b><!-- 0 --></b> <!-- destinos --></span>
+														</div>
+														</div>
+
+
+
+
+				<div class="item item_like">
+								<div class="item_img"></div>
+								<div class="item_info">
+														<b><!-- title --></b>
+														<span><!-- descripcion --></span>
+														<span><b><!-- 0 --></b> <!-- destinos --></span>
+														</div>
+														</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><div id="footer"><b>&copy; 2022 </b><b class="color_lime">turruta</b> Todos los derechos reservados.</div>
+
+</body>
+</html>
